@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'senacpic';
+  title = 'Angular Wallpaper';
+  descricao = 'foto retirada de uma equipe de retardados huuuuuuuuuuuuuuuuu é noix';
+  title1 = 'Python Wallpaper';
+  descricao1 = 'Linguagem de retardado';
+  title2 = 'Java Wallpaper';
+  descricao2 = 'é mais retardadi ainda';
+  vrdd = 'checked';
 }

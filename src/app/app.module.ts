@@ -3,8 +3,9 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { FotoModule } from './foto/foto.module';
-import { HttpClientModule } from '@angular/common/http';
 import { FotoRegistroComponent } from './foto-registro/foto-registro.component';
+import { RouterModule, Router, ROUTES } from '@angular/router';
+import { RoutingModule } from './foto/app.routing.module';
 
 
 @NgModule({
@@ -16,7 +17,7 @@ import { FotoRegistroComponent } from './foto-registro/foto-registro.component';
   imports: [
     BrowserModule,
     FotoModule,
-    HttpClientModule
+    RoutingModule    
     
   ],
   //prover um recurso

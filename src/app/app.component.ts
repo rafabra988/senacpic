@@ -8,13 +8,12 @@ import { FotoService } from './foto/foto.service';
   styleUrls: ['./app.component.css']
 })
 
-export class AppComponent {
-  fotos:Foto[];
 
-  constructor(private fotoService: FotoService){
-    fotoService.listaFotos().subscribe(
-      fotosDB => this.fotos = fotosDB,
-      erroDB => console.log(erroDB)
-    );
+export class AppComponent {
+  
+  valorBusca:String
+  
+  msgNoConsole(){ 
+    console.log('Elemeto clicando')
   }
 }

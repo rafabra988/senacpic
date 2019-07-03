@@ -1,15 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-foto-registro',
   templateUrl: './foto-registro.component.html',
-  styleUrls: []
+  styleUrls: ['./foto-registro.component.css']
 })
-export class FotoRegistroComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}
+export class FotoRegistroComponent {}

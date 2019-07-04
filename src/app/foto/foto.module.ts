@@ -8,7 +8,6 @@ import { FotoListComponent } from '../foto-list/foto-list.component';
 @NgModule({
     declarations: [
         FotoComponent,
-        FotoRegistroComponent,
         FotoListComponent
     ],
     // são os modulos que serão incorporados nesse arquivo

@@ -1,11 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
 import{ FotoModule } from './foto/foto.module';
 import { AppRoutingModule } from './foto/app.routing.module';
 import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
 import { HomeModule } from './home/home.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -21,7 +21,9 @@ import { HomeModule } from './home/home.module';
     BrowserModule,
     FotoModule,
     AppRoutingModule,
-    HomeModule
+    HomeModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   // responsavel por importar services
   providers: [],

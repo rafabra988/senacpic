@@ -1,24 +1,28 @@
 <fieldset>
   <legend>Cadastro de Fotos</legend>
-  <form>
+  <form [formGroup]="cadForm" method="post">
     <div class="form-group">
       <label for="idTitulo">Titulo</label>
-      <input id="idTitulo" type="text" class="form-control" placeholder="Informe o titulo">
+      <input id="idTitulo" formControlName="titulo" type="text" class="form-control" placeholder="Informe o titulo">
+      <small *ngIf="cadForm.get('titulo').errors?.required" class="text-danger d-block mt-2">Informe o Titulo</small>
     </div>
     <div class="form-group">
       <label for="idTituloAlt">Titulo Alternativo</label>
-      <input id="idTituloAlt" type="text" class="form-control" placeholder="Informe o titulo alternativo">
+      <input id="idTituloAlt" formControlName="tituloalt" type="text" class="form-control" placeholder="Informe o titulo alternativo">
+      <small *ngIf="cadForm.get('tituloalt').errors?.required" class="text-danger d-block mt-2">Informe o Titulo Alternativo</small>
     </div>
     <div class="form-group">
       <label for="idDescricao">Descrição</label>
-      <input id="idDescricao" type="text" class="form-control" placeholder="Informe a descrição">
+      <input id="idDescricao" formControlName="descricao" type="text" class="form-control" placeholder="Informe a descrição">
+      <small *ngIf="cadForm.get('descricao').errors?.required" class="text-danger d-block mt-2">Informe a Descrição</small>
     </div>
     <div class="form-group">
       <label for="idURL">URL</label>
-      <input id="idURL" type="url" class="form-control" placeholder="Informe a URL">
+      <input id="idURL" formControlName="url" type="url" class="form-control" placeholder="Informe a URL">
+      <small *ngIf="cadForm.get('url').errors?.required" class="text-danger d-block mt-2">Informe a URL</small>
     </div>
     <div class="form-group">
-      <button type="submit" class="btn btn-dark">Registrar</button>
+      <button [disabled]="cadForm.invalid" type="submit" class="btn btn-dark btn-outline-warning btn-block">Registrar</button>
     </div>
   </form>
 </fieldset>

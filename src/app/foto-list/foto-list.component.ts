@@ -4,8 +4,7 @@ import { FotoService } from '../foto/foto.service';
 
 @Component({
   selector: 'app-foto-list',
-  templateUrl: './foto-list.component.html',
-  styleUrls: ['./foto-list.component.css']
+  templateUrl: './foto-list.component.html'
 })
 export class FotoListComponent implements OnInit {
 
